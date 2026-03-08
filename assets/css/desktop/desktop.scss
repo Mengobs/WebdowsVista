@@ -1,0 +1,68 @@
+body {
+    background: url(../../images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desktop {
+    // display: flex;
+    // direction: ltr;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    width: 100vw;
+    height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 16px;
+
+    .item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        width: 80px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        padding-top: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+
+        p {
+            font-size: 9pt;
+            text-shadow:
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em,
+                rgba(0, 0, 0, .3) 1px 1px 0.2em;
+            max-width: 48px;
+            margin: 5px 0;
+            user-select: none;
+            cursor: default;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.3);
+            outline: solid 1px #fff7;
+            backdrop-filter: blur(10px) brightness(1.1);
+        }
+    }
+}

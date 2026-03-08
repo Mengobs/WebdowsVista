@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Test</title>
+    <link rel="stylesheet" href="/assets/css/widgets/widget.css" />
+    <link rel="stylesheet" href="/assets/css/widgets/window.css" />
+    <link rel="stylesheet" href="/assets/css/desktop/taskbar.css" />
+    <link rel="stylesheet" href="/assets/css/desktop/desktop.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="/7.css" /> -->
+    <!-- <style>
+        body {
+            backdrop-filter: blur(10px) brightness(1.1);
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="window aero active" style="width: 400px; height: 300px; top: calc(50% - 150px); left: calc(50% - 200px)">
+        <div class="titlebar">
+            <p>Window</p>
+            <div class="controls">
+                <button class="help"></button>
+                <button class="minimize"></button>
+                <button class="maximize"></button>
+                <button class="close"></button>
+            </div>
+        </div>
+        <div class="content padding">
+            <button>Button</button>
+        </div>
+    </div>
+
+    <div class="desktop">
+        <div class="item">
+            <img src="./assets/icons/pc.png" />
+            <p>计算机</p>
+        </div>
+        <div class="item">
+            <img src="./assets/icons/trashbin.png" />
+            <p>回收站</p>
+        </div>
+    </div>
+
+    <div class="taskbar aero">
+    </div>
+
+    <script type="module" src="./assets/js/window.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url(../fonts/Segoe\ UI.ttf);
+}
+
+body {
+    font-family: "Segoe UI";
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    display: flex;
+    perspective: 1000px;
+}
